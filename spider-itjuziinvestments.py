@@ -13,10 +13,15 @@ starttime = datetime.datetime.now()
 # 记得确认文件路径和爬多少页
 
 # 输出文件路径
-path = '/Users/admin/Documents/Python/ITjuzi_data/'+str(datetime.date.today())+'.csv'
+where_to_save_investment_list = '/Users/admin/Documents/Python/ITjuzi_data/investments/'
+# 爬取多少页
+ttlpagenum = 1300
+
+
+path = where_to_save_investment_list +str(datetime.date.today())+'.csv'
 
 # 爬多少个页
-pagenumbers = 1300
+pagenumbers = ttlpagenum
 
 
 # 清空文件,初始化首行

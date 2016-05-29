@@ -10,13 +10,16 @@ starttime = datetime.datetime.now()
 
 # set path of the file to save
 where_to_save_company_list = '/Users/admin/Documents/Python/ITjuzi_data/companies'
+# how many pages
+ttlpagenum = 2496
+
 
 path = where_to_save_company_list + str(datetime.date.today()) + '.csv'
 f=file(path,'w')
 f.write('name,date,field,location,status,discription,link\n')
 f.close()
 
-for page in range(1,2495):
+for page in range(1, ttlpagenum + 1):
 
 	url = 'http://www.itjuzi.com/company?page=' + str(page)
 
