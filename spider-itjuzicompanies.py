@@ -9,7 +9,9 @@ import urllib2
 starttime = datetime.datetime.now()
 
 # set path of the file to save
-path = '/Users/admin/Documents/Python/ITjuzi_data/companies'+ str(datetime.date.today()) + '.csv'
+where_to_save_company_list = '/Users/admin/Documents/Python/ITjuzi_data/companies'
+
+path = where_to_save_company_list + str(datetime.date.today()) + '.csv'
 f=file(path,'w')
 f.write('name,date,field,location,status,discription,link\n')
 f.close()
